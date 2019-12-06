@@ -1,5 +1,4 @@
 #include<stdio.h>
-#define MAX 100
 int main()
 {  int arr[MAX];
 int i,n,even=0,odd=0;
@@ -14,11 +13,11 @@ for(i=0;i<n;i++)
   { 
   if(arr[i]%2==0)
      { 
-     even+=1;
+     even++;
      }
   else 
      {
-     odd+=1;
+     odd++;
      }
   }
   printf("Total even & odd no's are %d & %d ",even,odd);
