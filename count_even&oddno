@@ -1,0 +1,26 @@
+#include<stdio.h>
+#define MAX 100
+int main()
+{  int arr[MAX];
+int i,n,even=0,odd=0;
+printf("Enter size of array:")
+scanf("%d",&n);
+printf("enter elements in the array %d",n);
+for(i=0;i<n;i++)
+  { 
+  scanf("%d",&arr[i]);  
+  }
+for(i=0;i<n;i++)
+  { 
+  if(arr[i]%2==0)
+     { 
+     even+=1;
+     }
+  else 
+     {
+     odd+=1;
+     }
+  }
+  printf("Total even & odd no's are %d & %d ",even,odd);
+  return(0);
+  }
